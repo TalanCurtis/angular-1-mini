@@ -3,8 +3,9 @@ angular.module('friendsList').controller('mainCtrl', function($scope){
     $scope.name=''
     $scope.addName = function(){
         console.log($scope.name)
-        $scope.friends.push(this.name)
+        $scope.friends.push($scope.name)
         $scope.name=''
     }
 });
 
+ 
